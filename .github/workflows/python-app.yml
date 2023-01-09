@@ -4,6 +4,7 @@
 name: Python application
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
   pull_request:
@@ -38,3 +39,4 @@ jobs:
       run: |
         export PYTHONPATH=src
         pytest
+  
